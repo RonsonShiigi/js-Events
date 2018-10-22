@@ -93,3 +93,10 @@ displayQuotes.appendChild(sayRandom);
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
 */
+showHide.addEventListener('click', magic);
+function magic(){
+    if( showmoney.style.display === 'none'){
+        showmoney.style.display = 'block'
+    }
+    else{showmoney.style.display= 'none'}
+}
