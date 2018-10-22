@@ -67,9 +67,13 @@ function showPrice(){
 
 //7. Mr. Buttons
 /*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.*/
-
+Benjamin.addEventListener('click', saySum)
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
-
+function saySum(){
+    var saySumTing = document.createElement('p');
+    saySumTing.innerHTML = myQuote;
+    displayQuote.appendChild(saySumTing);
+}
 
 //8. Say It again, Randomly
 /*Create a function that will generate a random quote from the variable below after clicking on the button.*/
