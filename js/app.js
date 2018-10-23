@@ -8,10 +8,10 @@ var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami ta
 // one.addEventListener('click', moreContent);
 function moreContent(){
    
-    var moreBacon = document.createElement('p');
-    moreBacon.innerHTML = bacon;
-    more.appendChild(moreBacon);
-
+    // var moreBacon = document.createElement('p');
+    // moreBacon.innerHTML = bacon;
+    // more.appendChild(moreBacon);
+    more.innerHTML = bacon;
 }
 
 //2. HTTP
