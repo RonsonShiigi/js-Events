@@ -42,12 +42,13 @@ Next, create a function named valueMenu that will display your favorite items in
 var menuItems = ['McChicken', 'Ice-Cream Cone', 'McDouble'];
 function valueMenu(){
 
-for(i=0; i<menuItems.length; i++){
-    var dollar = document.createElement('li');
-dollar.innerHTML = menuItems[i];
-menu.appendChild(dollar);
-}
+// for(i=0; i<menuItems.length; i++){
+//     var dollar = document.createElement('li');
+// dollar.innerHTML = menuItems[i];
+// menu.appendChild(dollar);
 
+// }
+menu.innerHTML = menuItems;
 }
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
@@ -59,9 +60,10 @@ function redFace(){
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
 function showPrice(){
-    var oreoPrice = document.createElement('div');
-    oreoPrice.innerHTML = '$5.55'
-    price.appendChild(oreoPrice);
+    // var oreoPrice = document.createElement('div');
+    // oreoPrice.innerHTML = '$5.55'
+    // price.appendChild(oreoPrice);
+    price.innerHTML = "$5.55";
     
 }
 
@@ -70,9 +72,10 @@ function showPrice(){
 Benjamin.addEventListener('click', saySum)
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
 function saySum(){
-    var saySumTing = document.createElement('p');
-    saySumTing.innerHTML = myQuote;
-    displayQuote.appendChild(saySumTing);
+    // var saySumTing = document.createElement('p');
+    // saySumTing.innerHTML = myQuote;
+    // displayQuote.appendChild(saySumTing);
+    displayQuote.innerHTML = myQuote;
 }
 
 //8. Say It again, Randomly
@@ -83,10 +86,10 @@ random.addEventListener('click', sayRandom);
 function sayRandom(){
 var randomWords = Math.floor(Math.random()*(quotes.length));
 
-var sayRandom = document.createElement('p');
-sayRandom.innerHTML= quotes[randomWords];
-displayQuotes.appendChild(sayRandom);
-
+// var sayRandom = document.createElement('p');
+// sayRandom.innerHTML= quotes[randomWords];
+// displayQuotes.appendChild(sayRandom);
+displayQuotes.innerHTML = quotes[randomWords];
 }
 
 
